@@ -3,6 +3,6 @@
   stationName: Admiralty // string
   stationMapfile: Admiralty.json // string
   stationDB: stationdb // string
-  stationCollection: adm // string
+  stationCollection: admiralty // string
   LayerIndex: [0, -1, -2] //[Interger]
  }]
