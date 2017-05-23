@@ -48,9 +48,9 @@
 **tickets_adm**: to store ticketing data for passengers at station ADM
 * _id: ObjectId
 * timestamp: int, 
-	* the timestamp when the record generated
+	* the timestamp when the record was generated
 * gate: int, 
-	* the ticket barrier that the record generated
+	* the ticket barrier at which the record was generated
 * io: boolean, 
 	* True when the passenger is getting into the station, and vice versa
 
