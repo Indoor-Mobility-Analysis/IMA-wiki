@@ -2,12 +2,12 @@
 ***
 **people_count**: to store the number of people in each station at any time
 * _id: ObjectId
-* day: int, 
+* day: int32, 
 	* to indicate which day in a week (value in [0, 7=0])
-* time: int, 
+* time: int32, 
 	* to indicate which five-minute period starting from 8 AM each day. 
 	* For example, 0 = 8:00 AM, 1 = 8:05 AM, ..., and etc.
-* count: float, 
+* count: float64, 
 	* the estimated number of people in the station at *day*, *time*.
 ***
 **people_activity**: to store people's activity such as coordinates, flow
@@ -36,9 +36,9 @@
 	* the station that the passenger got in
 * out_station: string, 
 	* the station that the passenger got out
-* in_time: int, 
+* in_time: int32, 
 	* the timestamp that the passenger got in
-* out_time: int, 
+* out_time: int32, 
 	* the timestamp that the passenger got out
 * in_gate: string or null, 
 	* the ticket barrier that the passenger got in
@@ -47,9 +47,9 @@
 ***
 **tickets_adm**: to store ticketing data for passengers at station ADM
 * _id: ObjectId
-* time_stamp: int, 
+* time_stamp: int32, 
 	* the timestamp when the record was generated
-* gate: int, 
+* gate: int32, 
 	* the ticket barrier at which the record was generated
 * io: boolean, 
 	* True when the passenger is getting into the station, and vice versa
