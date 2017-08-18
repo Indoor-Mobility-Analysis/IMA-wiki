@@ -21,8 +21,12 @@
 	* Each row contains the crowd and flow information on the floor map
     * [x, y, number of person, flow magnitude, flow direction]
 * big_clusters: [int32, int32, double, double, double, int32]
-	* Each row is a cluster found on the floor map
-    * [cluster’s x coordinate, cluster’s y coordinate, flow magnitude, flow direction, cluster’s density, cluster’s area in square meters] 
+    * Each row is a cluster found on the floor map
+    * [cluster’s x coordinate, cluster’s y coordinate, flow magnitude, flow direction, cluster’s density, cluster’s area in square meters]   
+    	* flow magnitude: int
+			* it means the speed of this flow, with pixel as the unit, the range is about [0, 10]
+		* flow direction: float
+			* it means the direction of the flow, with degree as the unit, the range is [0, 360]
 * small_clusters: [int32, int32, double, double, double, int32, string]
 	* Each row is a smaller cluster segmented from the big clusters
     * [cluster’s x coordinate, cluster’s y coordinate, flow magnitude, flow direction, density, exit ID] 
