@@ -24,7 +24,7 @@
     * Each row is a cluster found on the floor map
     * [cluster’s x coordinate, cluster’s y coordinate, flow magnitude, flow direction, cluster’s density, cluster’s area in square meters]   
     	* flow magnitude: int
-			* it means the speed of this flow, with pixel as the unit, the range is about [0, 10]
+			* it means the speed of the flow, with pixel as the unit, the range is about [0, 10]
 		* flow direction: float
 			* it means the direction of the flow, with degree as the unit, the range is [0, 360]
 * small_clusters: [int32, int32, double, double, double, int32, string]
